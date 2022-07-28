@@ -1,17 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <span class="navbar-brand ms-2"> {{ $t("title") }}</span>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!--<li class="nav-item active">
+            <router-link class="nav-link" to="/">{{ $t('Home') }}</router-link>
+
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/about">{{ $t('About') }}</router-link>
+          </li>-->
+        </ul>
+      </div>
+      
+      <LanguageSwitcher></LanguageSwitcher>
+    </nav>
+   
+
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LanguageSwitcher from "./components/LanguageSwitcher.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+
+  components: { LanguageSwitcher }
 }
+
 </script>
 
 <style>
@@ -21,6 +39,20 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  white-space: pre-line;
+  overscroll-behavior: contain;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
