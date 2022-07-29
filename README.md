@@ -1,8 +1,8 @@
 # touchscreentester
 This project has been created to test your touch screen.
 You can use your finger, pen or mouse to interact in the webpage and see if your browser/hardware is well supported.
-This tool is given under MIT licence by [Agoora SAS](www.agoora.fr)
-Contact : [www.agoora.fr](www.agoora.fr)
+This tool is given under MIT licence by [Agoora SAS](https://www.agoora.fr)
+Contact : [www.agoora.fr](https://www.agoora.fr)
 
 ## Project setup
 ```
