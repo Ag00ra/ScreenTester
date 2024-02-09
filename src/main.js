@@ -14,6 +14,4 @@ app.config.productionTip = false
 app.use(router)
 app.use(store)
 app.use(i18n)
-console.log(app.config.globalProperties)
-console.log(i18n.global.messages.value)
 app.mount('#app')
